@@ -1,0 +1,494 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Roboto&family=Sansita&family=Sansita+Swashed&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%; 
+  /* border: 1px solid red; */
+  padding: 1.5em 0;
+  position: absolute;
+}
+
+.navbar .nav-logo {
+  /* border: 1px solid red; */
+  font-size: 2em;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 1em;
+}
+
+.nav-list ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav-list ul li {
+  list-style-type: none;
+  padding: 0em 3em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav-list ul li button {
+  border: none;
+  padding: 1em 1.5em;
+  background: #fff;
+  color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* Nav menu */
+.navbar .nav-menu {
+  display: none;
+}
+
+/* Hero Section  */
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* border: 1px solid red; */
+  min-width: 100%;
+  min-height: 90vh;
+  background-image: url("https://drive.google.com/uc?export=view&id=1qd3GYvb4zGNr6elfkjep7JA-Yx7sPQCq");
+  background-position: center;
+  background-repeat: no-repeat !important;
+  background-size: cover;
+}
+
+.hero h2 {
+  text-transform: uppercase;
+  /* border: 1px solid red; */
+  font-size: 4em;
+  color: #fff;
+}
+
+.hero span {
+  color: #fff;
+  font-size: 4em;
+  /* height: 4em; */
+}
+
+/* Transform Section */
+.transform-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+  min-width: 100%;
+  background-size: cover;
+}
+
+.transform-section .left,
+.right {
+  width: 50%;
+}
+
+.transform-section .right {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 70vh;
+  background: url("https://drive.google.com/uc?export=view&id=1XU2oRJ44VimyfNwNnifwKa3y_LKUe7pN");
+}
+
+.transform-section .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.transform-section .left .bind {
+  width: 70%;
+}
+
+.transform-section .left h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.transform-section .left h3 {
+  margin: 2em 0;
+  font-size: 1em;
+}
+
+.transform-section .left p {
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.transform-section .left p::after {
+  content: "";
+  display: block;
+  height: 5px;
+  background: gold;
+  width: 23%;
+}
+
+.transform-section:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.transform-section:nth-child(2) .right {
+  background: url("https://drive.google.com/uc?export=view&id=1akJfYg8wJYGrF-17axYzOl5OV2od-I6r");
+}
+
+/* Graphic and Photography */
+
+.graphic-photography {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.graphic-photography div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  min-height: 60vh;
+  /* border: 1px solid red; */
+}
+
+.graphic-photography div .card {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin-bottom: 3em;
+  width: 65%;
+}
+
+.graphic-photography div .card h2 {
+  font-size: 1.8em;
+  margin-bottom: 0.5em;
+}
+
+.graphic-photography div .card p {
+  /* border: 1px solid red; */
+  text-align: center;
+  line-height: 1.3em;
+  font-weight: bold;
+  color: #333;
+}
+
+.graphic-photography .graphic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("https://drive.google.com/uc?export=view&id=160y_ER3zwe16_tjNToogfgNPWxsNs1Fu");
+}
+
+.graphic-photography .photography {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: url("https://drive.google.com/uc?export=view&id=1VWYV37Lt9nwzT9n6vnbMdV_HaSlvHsFb");
+}
+
+/* Testimonials */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  min-height: 80vh;
+  /* border: 1px solid red; */
+}
+
+.testimonial .head h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.4em;
+  margin-bottom: 2em;
+}
+
+.testimonial .head h2::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background: #d40a6f;
+  width: 30%;
+  margin-top: 0.2em;
+}
+
+.testimonial .cards {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.testimonial .cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  /* height: 50vh; */
+}
+
+.testimonial .cards .card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10em;
+}
+
+.testimonial .cards .card > p {
+  text-align: center;
+  margin: 4em 0;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.8em;
+  padding: 0 1em;
+}
+
+.testimonial .cards .card .details h3 {
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.testimonial .cards .card .details p {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+}
+
+/* Image Section */
+.image-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-section img {
+  width: 25%;
+}
+
+.footer {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.6);
+  min-height: 40vh;
+  background: rgba(0, 128, 0, 0.752);
+}
+
+.footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.footer ul li {
+  list-style: none;
+  padding: 0em 2em;
+  font-size: 1.2em;
+}
+
+.footer * {
+  margin-bottom: 2em;
+}
+
+@media screen and (max-width: 740px) {
+  .hero h2 {
+    font-size: 3em;
+  }
+  .navbar .nav-list {
+    position: fixed;
+    min-height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d40a6f;
+    max-width: 100%;
+  }
+
+  .navbar .nav-list[aria-hidden="true"] {
+    transform: translateY(-1000px);
+    border: 1px solid red;
+  }
+
+  .navbar .nav-list ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .navbar .nav-list ul li {
+    margin-bottom: 3em;
+  }
+
+  .navbar .nav-menu {
+    display: flex;
+    width: 25px;
+    /* border: 1px solid red; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .navbar .nav-menu div {
+    width: 100%;
+    height: 2px;
+    background: red;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    /* border: 1px solid red; */
+  }
+
+  .navbar .nav-menu[aria-hidden="false"] > div:nth-child(1) {
+    transform: rotate(135deg);
+    background: aliceblue;
+    margin: -2px;
+  }
+
+  .navbar .nav-menu[aria-hidden="false"] > div:nth-child(2) {
+    transform: rotate(-135deg);
+    background: aliceblue;
+  }
+
+  .navbar .nav-menu[aria-hidden="false"] > div:nth-child(3) {
+    display: none;
+  }
+
+  .transform-section .right,
+  .transform-section:nth-child(2) .right {
+    width: 70%;
+  }
+
+  .testimonial .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .testimonial .cards .card {
+    margin-bottom: 4em;
+    /* border: 1px solid red; */
+  }
+
+  .testimonial {
+    margin-top: 2em;
+  }
+
+  .testimonial .head h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  .graphic-photography {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 2em; */
+  }
+
+  .graphic-photography .graphic,
+  .graphic-photography .photography {
+    width: 100%;
+  }
+
+  .graphic-photography div .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  .graphic-photography div .card h2,
+  .graphic-photography div .card p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    color: aliceblue;
+  }
+
+  .graphic-photography div .card h2::after {
+    content: "";
+    width: 30%;
+    background: #d40a6f;
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .transform-section,
+  .transform-section:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .transform-section .right,
+  .transform-section:nth-child(2) .right {
+    width: 100%;
+    min-height: 50vh;
+  }
+
+  .transform-section .left,
+  .transform-section:nth-child(2) .left {
+    margin: 2em 0;
+    min-height: 50vh;
+    width: 100%;
+  }
+
+  .testimonial .head h2 {
+    font-size: 1.2em;
+    margin-block: 3em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .hero h2 {
+    font-size: 2.5em;
+  }
+
+  .hero span {
+    font-size: 3em;
+  }
+}
